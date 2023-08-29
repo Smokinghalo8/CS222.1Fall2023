@@ -86,6 +86,6 @@ def part5():
             #print(f"Pass Number: {n} Amount of money ended Right Now: {endAmount}")
             print(f"Semester Number: {n} Price so far: {endAmount}")
 
-part5()
+
 
 
