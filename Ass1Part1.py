@@ -58,7 +58,7 @@ def part4():
         CurrentValue = int(input(print("Current Price: ")))
     print(f"Shares can now be sold! Current Price: {CurrentValue} Target Price: {targetValue}")
 
-
+#NOT THE RIGHT ONE!
 def part4m2():
     curr=[17,29,39,10,46,103,28,183]
     target = int(input(print("Target Price: ")))
