@@ -34,4 +34,16 @@ def Year(credits=0):    #Putting the '=0' to the end of credits get overwritten 
 
 def deafaultOp(x=0,y=0,z=0):
     print(f"x={x}y={y}z={z}")
-deafaultOp(5,2)
+
+def main():
+    midterm = [70,92,100]
+    try:
+        print(midterm[2])   #bad exception
+    except:     #Try Catch command
+        print("Error 1 - error in main function, overflow of index")
+    x=0
+    try:
+        z=10/x
+    except:
+        print("Error 2 - Error in main function, divide by zero error")
+main()
