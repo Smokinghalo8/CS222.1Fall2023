@@ -46,8 +46,10 @@ def main():
         z=10/x
     except ZeroDivisionError:
         print("Error 2 - Error in main function, divide by zero error")
+    except NameError:
+        print("Name Error")
     else:
-        print("CS 222")
+        print("CS 222")     #Else statment if they dont devide by zero
     finally:
-        print("End one")
+        print("End one")    #added at the end regardless
 main()
