@@ -44,6 +44,10 @@ def main():
     x=0
     try:
         z=10/x
-    except:
+    except ZeroDivisionError:
         print("Error 2 - Error in main function, divide by zero error")
+    else:
+        print("CS 222")
+    finally:
+        print("End one")
 main()
