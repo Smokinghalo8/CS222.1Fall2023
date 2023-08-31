@@ -19,10 +19,11 @@ def part1():
         print("Error 1")
 
 #Write a program that uses a loop to compute and print the sum of all even numbers between 2 and 100 (inclusive).
+#Fixed
 
 def part2():
     tempnumber1 = 0
-    for number in range(0,100): #Does it include the 100? if so Change the 100 in the range to 101!
+    for number in range(0,101): #Does it include the 100? if so Change the 100 in the range to 101!
         if(number%2==0):
             print(f"TempNumber: {tempnumber1} - Number: {number}")
             tempnumber1+=number
@@ -73,7 +74,7 @@ def part4m2():
 #At one college, the tuition for a full-time student is $8,000 per semester.
 #It has been announced that the tuition will increase by 3 percent each year for the next 5 years.
 # Write a program with a loop that displays the projected semester tuition amount for each of the next 5 years.
-
+#FIXED
 
 def part5():
     startingTuitionSemester = 8000
@@ -84,7 +85,7 @@ def part5():
                 startingTuitionSemester = startingTuitionSemester*1.003
             endAmount +=startingTuitionSemester
             #print(f"Pass Number: {n} Amount of money ended Right Now: {endAmount}")
-            print(f"Semester Number: {n} Price so far: {endAmount}")
+            print(f"Semester Number: {n} Added Price so far: {endAmount} Semester Cost By Itself: {startingTuitionSemester}")
 
 
 
