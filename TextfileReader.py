@@ -6,7 +6,10 @@ def main():
         students = studentlist1.readlines()
 
         studentlist1.close()
-        print(students)
+        #print(students)
+        for s in students:
+            tempS = s.split()   #by default splits a string between spaces
+            print(tempS[0])
     except FileNotFoundError:
         print("Error 1 - filenotFound error")
 main()
