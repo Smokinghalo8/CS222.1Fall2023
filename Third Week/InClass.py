@@ -99,7 +99,7 @@ class RealPower(Power): #To use inheritence in Python, Put the name of the class
 
 def main3():
     n0 = RealPower(5)
-    print(n0.of(1/3))
+    print(n0.of(3))
 
 
 main3()
