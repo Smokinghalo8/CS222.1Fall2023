@@ -13,11 +13,11 @@ txt.grid(column=1,row=0)
 
 def clicked():
     result = "Welcome to "+txt.get()
-    Label1.configure(text=result)
+    Label1.configure(text=result)   #Turns the text inside Label1 into the string, result
 
 
 
-button = tk.Button(window,text="Welcome", command=clicked)#Need to define this
+button = tk.Button(window,text="Welcome", command=clicked)#Need to define this BEFORE it gets called!
 button.grid(column=2,row=0)
 
 window.mainloop()
