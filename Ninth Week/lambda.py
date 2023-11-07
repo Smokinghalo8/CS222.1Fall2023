@@ -1,4 +1,6 @@
 #anonomous function - does not have a name as a function - and only one to two lines
+#Need to install pip3 matplotlib
+
 
 add = lambda x, y: x + y        #This is the function - add is the function - the two arguments are before the : and the text after is the function
 result = add(3,5)
