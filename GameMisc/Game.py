@@ -4,11 +4,12 @@ from random import randint
 
 
 def main():
+    
     player1 = playerCreation("Player1Name")
     player2 = playerCreation("Player2Name")
     game1 = game(20, player1, player2)
 
-    print(game1.moneyNodeAmount(player1,1,0,0)) #self,player,passThroughs,extraMoves,bonus - bonus; 0=nothing 1=ExtraRouter
+    print(game1.moneyNodeAmount(player1,1,1,0)) #self,player,passThroughs,extraMoves,bonus - bonus; 0=nothing 1=ExtraRouter
     #game1.printShop(player1)
     #player1.printItems(player1)
     
