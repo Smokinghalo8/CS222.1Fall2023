@@ -1,7 +1,10 @@
 import os
+import json
 
 def main():
     tempDir=os.getcwd()
+    spells = json.loads(tempDir+"/misc/DnDProject/assets/spells.json")
+    print(spells)
     DirectorySaveFileList = os.listdir(tempDir+"/misc/DnDProject/savedChars")
     player = playerSetup()
     player.createIMPORTANTarrays()
@@ -65,7 +68,7 @@ class playerSetup:
         self.spellbook = []
         self.items = []
         self.effects = []
-        self.perks = []
+        self.perks = [] #This is my addition, itll make the game stronger is were gonna make an actual game :P
 
     def appendSpellIntoSpellbook(self,spell):
         #Should take the spell and compare it to a file with ALL the dnd Spells, to make sure it is spelled correctly, 
